@@ -1,0 +1,36 @@
+@media(max-width: 1150px) {
+    .container {
+        width:95%;
+        gap: 3rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        padding-block: 4rem 3rem;
+        width: 90%;
+    }
+    .header__title, .header__text {
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 480px) {
+    body {
+        background-image: url(../assets/images/bg-intro-mobile.png);
+    }
+    .header__title {
+        font-size: 2rem;
+        line-height: 40px;
+        margin-bottom: 2rem;
+    }
+    .header__text {
+        transform: translateY(150px);
+    }
+
+    .container__claim-form {
+        padding-inline: 1.25rem;
+    }
+}

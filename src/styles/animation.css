@@ -1,0 +1,19 @@
+@keyframes scaleGrow {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveX {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveY {
+    to {
+        transform: translateY(0);
+    }
+}
+

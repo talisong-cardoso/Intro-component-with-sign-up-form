@@ -8,6 +8,8 @@
 
   <title>Intro component with sign up form | Frontend Mentor</title>
   <link rel="stylesheet" href="./src/styles/index.css">
+  <link rel="stylesheet" href="./src/styles/responsive.css">
+  <link rel="stylesheet" href="./src/styles/animation.css">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     </header>
     <main class="main">
       <p class="main__offer"><span>Try it free 7 days </span>then $20/mo. thereafter</p>
-      <section class="form__container">
+      <section class="container__claim-form">
         <form action="#" id="claim-form">
           <label for="first-name" class="claim-form__label">
             <input type="text" name="first-name" id="first-name" class="claim-form__input" placeholder="First Name" />
@@ -36,10 +38,10 @@
           <label for="password" class="claim-form__label">
             <input type="text" name="password" id="password" class="claim-form__input" placeholder="Password" />
           </label>
-          <button id="cliam-form__button">Claim your free trial</button>
+          <button id="claim-form__button">Claim your free trial</button>
         </form>
         <p id="main__cliam-form__terms">
-          By clicking the button, you are agreeing to our <span>Terms and Services</span>
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
         </p>
       </section>
     </main>
