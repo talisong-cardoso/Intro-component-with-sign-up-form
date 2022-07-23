@@ -102,7 +102,7 @@ body {
 
 .claim-form__input {
   width: 100%;
-  padding-inline-start: 1.5rem;
+  padding-inline-start: 1.8rem;
   height: 54px;
   border-radius: var(--radius-small);
   border: 1px solid #ddd;
@@ -143,6 +143,7 @@ body {
 
 .claim-form__input::placeholder {
   font-size: 14px;
+  color: var(--colors-dark-blue);
 }
 
 #claim-form__button {
