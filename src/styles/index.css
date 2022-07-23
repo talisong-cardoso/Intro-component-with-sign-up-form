@@ -41,23 +41,23 @@ body {
 }
 
 .header {
-    width: min(100%, 500px);
-    overflow: hidden;
+  width: min(100%, 500px);
+  overflow: hidden;
 }
 
 .header__title {
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    margin-bottom: 1.4rem;
-    transform: translateX(-450px);
-    animation: moveX 1s ease forwards;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.4rem;
+  transform: translateX(-450px);
+  animation: moveX 1s ease forwards;
 }
 
 .header__text {
-    line-height: 28px;
-    transform: translateY(80px);
-    animation: moveY 800ms ease-in 500ms forwards;
+  line-height: 28px;
+  transform: translateY(80px);
+  animation: moveY 800ms ease-in 500ms forwards;
 }
 
 .main {
@@ -102,26 +102,37 @@ body {
   position: relative;
 }
 
-.claim-form__label p {
-  color: var(--colors-red);
-  font-size: var(--text-small);
-  font-style: italic;
-  text-align: right;
-  margin-top: 5px;
-}
-
 .claim-form__input {
   width: 100%;
   padding-inline-start: 1.5rem;
   height: 54px;
   border-radius: var(--radius-small);
   border: 1px solid #ccc;
+  outline: none;
   font-weight: 500;
   font-size: var(--text-base);
 }
 
-[hidden] {
-  display: none;
+.claim-form__input:focus {
+  border: 1px solid var(--colors-dark-blue);
+}
+
+[aria-invalid="true"] {
+  color: var(--colors-red);
+  outline: none;
+  border: 2px solid var(--colors-red);
+}
+
+[aria-invalid="true"]:focus {
+  border: 2px solid var(--colors-red);
+}
+
+[aria-invalid="true"]~p {
+  color: var(--colors-red);
+  font-size: var(--text-small);
+  font-style: italic;
+  text-align: right;
+  margin-top: 5px;
 }
 
 .claim-form__icon-error {
@@ -131,9 +142,6 @@ body {
   transform: translateY(-50%);
 }
 
-.claim-form__input:focus {
-  border-color: var(--colors-dark-blue);
-}
 
 .claim-form__input::placeholder {
   font-weight: 600;
@@ -149,12 +157,14 @@ body {
   box-shadow: 0 4px 0px hsl(154, 63%, 43%);
   height: 3.375rem;
   border: none;
+  outline: none;
   text-transform: uppercase;
   cursor: pointer;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 1px;
   transition: 200ms ease background;
+  user-select: none;
 }
 
 #claim-form__button:hover {
