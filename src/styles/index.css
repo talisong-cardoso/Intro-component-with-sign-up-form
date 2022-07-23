@@ -15,7 +15,7 @@
   --colors-white: hsl(0, 0%, 100%);
 
   --text-base: 16px;
-  --text-small: 12px;
+  --text-small: 10px;
 
   --radius: 10px;
   --radius-small: 6px;
@@ -46,7 +46,6 @@ body {
 }
 
 .header__title {
-  font-weight: 600;
   font-size: 3rem;
   line-height: 3.5rem;
   margin-bottom: 1.4rem;
@@ -107,7 +106,7 @@ body {
   padding-inline-start: 1.5rem;
   height: 54px;
   border-radius: var(--radius-small);
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   outline: none;
   font-weight: 500;
   font-size: var(--text-base);
@@ -144,7 +143,6 @@ body {
 
 
 .claim-form__input::placeholder {
-  font-weight: 600;
   font-size: 14px;
 }
 
@@ -160,7 +158,6 @@ body {
   outline: none;
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 15px;
   font-weight: 700;
   letter-spacing: 1px;
   transition: 200ms ease background;
@@ -173,7 +170,7 @@ body {
 
 #main__cliam-form__terms {
   color: var(--colors-graysh-blue);
-  font-size: 12px;
+  font-size: var(--text-small);
   text-align: center;
   line-height: 1.25rem;
 }
