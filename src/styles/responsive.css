@@ -27,6 +27,7 @@
         margin-bottom: 2rem;
     }
     .header__text {
+        animation-duration: 1.2s;
         transform: translateY(150px);
     }
 
